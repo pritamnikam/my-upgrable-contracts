@@ -1,4 +1,4 @@
-## Upgradeable Smart Contracts
+# Upgradeable Smart Contracts
 
 ## Why Upgrade Smart Contracts?
 By design, smart contracts are immutable. On the other hand, software quality heavily depends on the ability to upgrade and patch source code in order to produce iterative releases.
@@ -19,7 +19,7 @@ This contract holds authority over Proxy to upgrade the Proxy contract and thus 
 
 ## Visualization: Upgrading a Smart Contract from V2 to V3
 
-![Upgrading a Smart Contract](./images/upgradable-contracts.png)
+![Upgrading a Smart Contract](https://github.com/pritamnikam/my-upgrable-contracts/blob/main/images/upgradable-contracts.png)
 
 The above diagram shows what is called the transparent proxy pattern. This pattern uses call, delegatecall and the three-contract design in order to achieve a super cool infrastrastructure. 💥
 
