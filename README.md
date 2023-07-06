@@ -36,10 +36,29 @@ Here is a breakdown of the diagram flow, from the user perspective:
 Try running some of the following tasks:
 
 ```shell
+$ npx hardhat node
+Started HTTP and WebSocket JSON-RPC server at http://127.0.0.1:8545/
+
+Accounts
+========
+
+WARNING: These accounts, and their private keys, are publicly known.
+Any funds sent to them on Mainnet or any other live network WILL BE LOST.
+
+Account #0: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 (10000 ETH)
+Private Key: 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+
+...
+
 # deploy v1
-npx hardhat run scripts/deployProxy.js --network goerli
+$ npx hardhat run scripts/deployProxy.js
+Proxy contract address: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Implementation contract address: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+
 
 # upgrade to v2
-npx hardhat run scripts/upgradeProxy.js --network goerli
+$ npx hardhat run scripts/upgradeProxy.js
+The current contract owner is: [object Promise]
+Implementation contract address: 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
 
 ```
